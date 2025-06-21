@@ -6,6 +6,11 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "paths": {
+      "mo-breadcumb-manager": [
+        "./dist/mo-breadcumb-manager"
+      ]
+    },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
@@ -29,6 +34,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/mo-breadcumb-manager/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/mo-breadcumb-manager/tsconfig.spec.json"
     }
   ]
 }
