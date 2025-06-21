@@ -1,5 +1,5 @@
 /*
- * Public API Surface of mo-breadcumb-manager
+ * Public API Surface of mo-breadcrumb-manager
  */
 
 /*
@@ -8,5 +8,4 @@
 
 export * from './lib/interfaces/breadcrumb.interface';
 export * from './lib/services/breadcrumb';
-
-export * from './lib/mo-breadcumb-manager';
+export * from './lib/mo-breadcrumb-manager';

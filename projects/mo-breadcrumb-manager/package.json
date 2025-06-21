@@ -1,6 +1,6 @@
 {
-  "name": "mo-breadcumb-manager",
-  "version": "0.0.1",
+  "name": "mo-breadcrumb-manager",
+  "version": "0.0.2",
   "description": "Angular dynamic breadcrumb component with route-based navigation",
   "keywords": [
     "angular",
@@ -18,9 +18,9 @@
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
-  "homepage": "https://github.com/votre-username/ng-dynamic-breadcrumb#readme",
+  "homepage": "https://github.com/Mbra-Oliver/mo-flexible-breadcrumb/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/votre-username/ng-dynamic-breadcrumb.git"
+    "url": "https://github.com/Mbra-Oliver/mo-flexible-breadcrumb.git"
   }
 }

@@ -5,7 +5,7 @@ import { Breadcrumb } from './services/breadcrumb';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'lib-mo-breadcumb-manager',
+  selector: 'mo-breadcrumb-manager',
   imports: [CommonModule],
   template: `
     <div class="flex flex-col gap-1">

@@ -7,9 +7,7 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "mo-breadcumb-manager": [
-        "./dist/mo-breadcumb-manager"
-      ]
+      "mo-breadcrumb-manager": ["./dist/mo-breadcrumb-manager"]
     },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -36,10 +34,10 @@
       "path": "./tsconfig.spec.json"
     },
     {
-      "path": "./projects/mo-breadcumb-manager/tsconfig.lib.json"
+      "path": "./projects/mo-breadcrumb-manager/tsconfig.lib.json"
     },
     {
-      "path": "./projects/mo-breadcumb-manager/tsconfig.spec.json"
+      "path": "./projects/mo-breadcrumb-manager/tsconfig.spec.json"
     }
   ]
 }

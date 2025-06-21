@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "npmFlexibleBreadcrumb": {
+    "breadcrumb-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -21,9 +21,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "styles": ["src/styles.css"],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -58,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "npmFlexibleBreadcrumb:build:production"
+              "buildTarget": "breadcrumb-app:build:production"
             },
             "development": {
-              "buildTarget": "npmFlexibleBreadcrumb:build:development"
+              "buildTarget": "breadcrumb-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,27 +77,28 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"]
           }
         }
       }
     },
-    "mo-breadcumb-manager": {
+    "mo-breadcrumb-manager": {
       "projectType": "library",
-      "root": "projects/mo-breadcumb-manager",
-      "sourceRoot": "projects/mo-breadcumb-manager/src",
-      "prefix": "lib",
+      "root": "projects/mo-breadcrumb-manager",
+      "sourceRoot": "projects/mo-breadcrumb-manager/src",
+      "prefix": "mbm",
       "architect": {
         "build": {
           "builder": "@angular/build:ng-packagr",
+          "options": {
+            "project": "projects/mo-breadcrumb-manager/ng-package.json"
+          },
           "configurations": {
             "production": {
-              "tsConfig": "projects/mo-breadcumb-manager/tsconfig.lib.prod.json"
+              "tsConfig": "projects/mo-breadcrumb-manager/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/mo-breadcumb-manager/tsconfig.lib.json"
+              "tsConfig": "projects/mo-breadcrumb-manager/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -107,11 +106,8 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "tsConfig": "projects/mo-breadcumb-manager/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "tsConfig": "projects/mo-breadcrumb-manager/tsconfig.spec.json",
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MoBreadcumbManager } from './mo-breadcumb-manager';
+import { MoBreadcumbManager } from './mo-breadcrumb-manager';
 
 describe('MoBreadcumbManager', () => {
   let component: MoBreadcumbManager;
@@ -8,9 +8,8 @@ describe('MoBreadcumbManager', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MoBreadcumbManager]
-    })
-    .compileComponents();
+      imports: [MoBreadcumbManager],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(MoBreadcumbManager);
     component = fixture.componentInstance;
